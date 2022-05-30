@@ -1,0 +1,293 @@
+* {
+  margin: 0; /* remove default margin from the browser */
+  padding: 0; /* remove default padding from the browser */
+  box-sizing: border-box;
+}
+
+body {
+  background: #fefffe;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  display: block;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0rem 2rem 3rem;
+}
+
+.header {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background: rgb(235, 239, 218);
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 12rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a.link:focus,
+a.link:hover {
+  text-decoration: underline;
+}
+
+.button-design {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.25rem;
+  color: #fefffe;
+  padding: 1rem 0;
+  background: #3f6660;
+  border: 2px solid #3f6660;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.button-design:focus, /* providing focus styles for keyboard navigation */
+.button-design:hover {
+  color: #3f6660;
+  background: #8bdf83;
+}
+
+.nav-wrapper.container {
+  padding-bottom: 0;
+}
+
+.nav-list {
+  justify-self: center;
+  align-self: center; /* vertically align items */
+}
+
+.nav-item {
+  list-style-type: none; /* remove bullet points from list */
+  width: 9rem;
+}
+
+.grid-layout {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.nav-list.grid-layout {
+  grid-gap: 0.5rem;
+}
+
+.color-block {
+  padding: 1rem 1rem 1.2rem 1.5rem;
+  margin-bottom: 1.3rem;
+  border-radius: 0.3rem;
+}
+
+p.color-block {
+  padding: 1.5rem 2rem;
+}
+
+.bg-blue {
+  background: rgb(221, 247, 252);
+}
+
+.bg-pink {
+  background: mistyrose;
+}
+
+.main-heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.sub-heading {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.product-list-item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+a .product-list-item {
+  background: rgb(239, 235, 255);
+}
+
+a:focus .product-list-item , /* providing focus styles for keyboard navigation */
+a:hover .product-list-item {
+  background: peachpuff;
+}
+
+.product-brief {
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.product-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.product-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.product-detail .product-title {
+  font-size: 2rem;
+}
+
+.product-detail .product-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.product-detail .product-price {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.contact.grid-layout {
+  grid-gap: 2rem;
+}
+
+.contact form {
+  margin: 2rem 0 0.2rem;
+}
+
+.contact .button-design {
+  margin-top: 0.5rem;
+}
+
+.contact-detail.color-block {
+  min-width: 18rem;
+  background: rgb(239, 235, 255);
+}
+
+.form-label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  border: 2px solid #999;
+  background: rgb(255, 253, 245);
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.form-control:focus {
+  background: papayawhip;
+}
+
+textarea.form-control {
+  height: 7rem;
+}
+
+@media (max-width: 37.5rem) and (min-width: 27.5rem) {
+  .product-brief .product-title {
+    font-size: 1.8rem;
+  }
+
+  .product-brief .product-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .product-brief .product-price {
+    font-size: 1.7rem;
+  }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 37.5rem) {
+  .logo {
+    margin: 0;
+  }
+
+  .nav-wrapper.grid-layout {
+    grid-template-columns: 30% auto;
+  }
+
+  .nav-list.grid-layout {
+    grid-template-columns: min-content min-content;
+    grid-gap: 2rem;
+  }
+
+  .nav-list {
+    justify-self: end;
+  }
+
+  h1.main-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .product-list.grid-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-page.grid-layout {
+    grid-template-columns: 45% auto;
+  }
+
+  .contact.grid-layout {
+    grid-template-columns: auto 45%;
+  }
+
+  .buy-now {
+    width: 12rem;
+  }
+}
+
+/* Large devices */
+@media only screen and (min-width: 62rem) {
+  .product-list.grid-layout {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .product-page.grid-layout {
+    grid-template-columns: 35% auto;
+  }
+
+  .contact.grid-layout {
+    grid-template-columns: auto 40%;
+  }
+}

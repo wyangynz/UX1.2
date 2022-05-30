@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact us for succulent purchase enquires and deals at Plants and Things"
+    />
+    <title>Contact Us | Plants and Things</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-wrapper container grid-layout">
+        <div class="logo">
+          <img src="images/logo.png" alt="Plants and Things logo" />
+        </div>
+        <ul class="nav-list grid-layout">
+          <li class="nav-item">
+            <a title="Link to home page" href="index.html" class="button-design"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              title="Link to contact page"
+              href="contact.html"
+              class="button-design"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="contact grid-layout">
+        <div class="grid-left">
+          <h1 class="main-heading color-block bg-pink">
+            Feel free to get in touch anytime
+          </h1>
+          <form action="https://formspree.io/f/xvodlynl" method="post">
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input
+                class="form-control"
+                id="name"
+                name="Name"
+                type="text"
+                placeholder="Jane Doe"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-control"
+                id="email"
+                name="Email"
+                type="email"
+                placeholder="email@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="Message"
+                maxlength="500"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <button
+                title="Button to submit form"
+                class="button-design"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="grid-right">
+          <h2 class="sub-heading color-block bg-blue">Contact Details</h2>
+
+          <div class="contact-detail color-block">
+            <span>
+              123 Main Street
+              <br />Auckland 0123 <br />NEW ZEALAND
+            </span>
+            <span>
+              Phone
+              <br />09 123 4567 </span
+            ><span
+              >Email
+              <br />
+              <a
+                title="Link to email"
+                class="link"
+                href="mailto:sales@plantsandthings.co.nz"
+                >sales@plantsandthings.co.nz</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
